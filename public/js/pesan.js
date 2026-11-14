@@ -64,7 +64,7 @@
                 selProduk.appendChild(el('option', { value: '', text: j ? 'Pilih produk ' + j.nama.toLowerCase() : 'Pilih jenis kue dahulu' }));
                 if (j) {
                     j.produk.forEach(function (p) {
-                        var o = el('option', { value: p.id, text: p.nama + ' (mulai ' + p.harga + ')' });
+                        var o = el('option', { value: p.id, text: p.nama + ' ( ' + p.harga + ')' });
                         if (String(p.id) === String(it.produk)) o.selected = true;
                         selProduk.appendChild(o);
                     });
